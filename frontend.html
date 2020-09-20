@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+*{
+	padding: 0;
+	margin: 0;
+	}
+
+
+
+.main-container{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.nav-bar{
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	display: flex;
+
+}
+.nav-bar ul{
+	margin-left: 35%;
+	line-height: 80px;
+}
+
+.nav-bar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.nav-bar ul li a{
+	text-decoration: none;
+	padding: 13px;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: monospace;
+	color: white;
+
+}
+
+a:hover{
+	background-color: gray;
+	transition: .5s;
+	color: green;
+}
+
+.search{
+	height: 80px;
+	width: 200px;
+	margin-left:50%; 
+	line-height:80px;
+
+}
+.sub-search{
+	height: 30px;
+	width: 200px;
+	
+}
+
+.search input[type=text] {
+  float: right;
+  padding: 20px;
+  border: none;
+  margin-top: 12px;
+  margin-right: 16px;
+  font-size: 10px;
+}
+
+/*.banner{
+	height: 600px;
+	width: 100%;
+	background-image: url(images/slider.jpg);
+	background-size: cover;
+
+
+
+}*/
+
+@media (max-width: 1185px){
+	.nav-bar ul{
+		margin-left: 20%;
+	line-height: 80px;
+	}
+	
+
+
+}
+
+@media (max-width: 965px)
+	{
+		.nav-bar ul{
+		margin-left: 10%;
+	line-height: 80px;
+	}
+	}
+
+
+@media (max-width: 860px)
+	{
+		.nav-bar ul{
+		margin-left: 5%;
+	line-height: 80px;
+	font-size: 10px;
+	}
+	}
+
+	</style>
+	<meta charset="utf-8">
+	<title>Butwal Multiple Campus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+	<div class="main-container">
+<div class="nav-bar">
+	<div class="logo">
+	<img src="images/logo2.png" style="height: 80px; width: 80px">
+	</div>
+	<ul>
+		<li><a href="#">Home</li>
+		<li><a href="#">About-Us</li>
+		<li><a href="#">Courses</li>
+		<li><a href="#">Gallery</li>
+	</ul>
+
+	<div class="search">
+		<div class="sub-search">
+		<input type="text" placeholder="Search...." >
+	</div>
+	</div>
+</div>
+
+<div class="banner">
+	
+	<img src="images/slider.jpg" style="height: 600px; width: 100%">
+</div>
+
+
+</div>
+
+
+</body>
+</html>
